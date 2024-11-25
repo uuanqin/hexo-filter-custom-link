@@ -13,10 +13,12 @@ const log = require('hexo-log').default({
 
 if (config.enable) {
     // Constructing a map
-    var t
     const template_map = {}
-    for (t of config.custom_templates) {
-        template_map[t.name] = t.template
+    if(config.custom_templates){
+        var t
+        for (t of config.custom_templates) {
+            template_map[t.name] = t.template
+        }
     }
 
     hexo.extend.filter.register("before_post_render", (post) => {

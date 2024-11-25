@@ -13,6 +13,14 @@
     "custom",
     "html"
   ],
-  "author": "wuanqin",
+  "author": "wuanqin <wuanqin@mail.ustc.edu.cn>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uuanqin/hexo-filter-custom-link.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uuanqin/hexo-filter-custom-link/issues"
+  },
+  "homepage": "https://github.com/uuanqin/hexo-filter-custom-link#readme",
   "license": "MIT"
 }

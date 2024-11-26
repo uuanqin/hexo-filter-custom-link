@@ -85,6 +85,21 @@ Then the resultant HTML of the link will be:
 <a class="my-link-2" href="https://example.com">title</a>
 ```
 
+## Spacing
+
+For complex templates, we can adjust the spacing to separate the HTML template from Markdown.
+
+```yaml
+custom_link:
+  enable: true   # enable this plugin
+  general_template: '' # if yoy leave this option blank, generic links are not templated
+  general_spacing: 0
+  custom_templates:
+    - name: TEMP
+      template: ''
+      spacing: 2
+```
+
 ## Placeholders
 
 A placeholder can be reused multiple times in a template.
@@ -92,6 +107,7 @@ A placeholder can be reused multiple times in a template.
 - `__TEXT__` This is the link text.
 - `__URL__` This is the target URL.
 - `__NAME__` This is the template name.
+- `__TITLE__` This is the title of link.
 
 ## Related Hexo Plugins
 
